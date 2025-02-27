@@ -1,11 +1,20 @@
 #include<stdio.h>
 int main(){
-    int n1, n2, n3, media;
-    for (int cont = 1; cont < 4; cont++){
-        printf("Digite três números reais: ");
-        scanf("%d, %d, %d", &n1, &n2, &n3);
-    }
-    media = n1 + n2 + n3 / 3;
-    printf("A média é: %.1d", media);
+    int n1, n2, n3;
+    float media;
+
+    printf("Digite o primeiro número: ");
+    scanf("%d", &n1);
+
+    printf("Digite o segundo número: ");
+    scanf("%d", &n2);
+
+    printf("Digite o terceiro número: ");
+    scanf("%d", &n3);
+    
+    media = (n1 + n2 + n3) / 3.0;
+
+    printf("A média é: %.1f\n", media);
+    
     return 0;
 }
